@@ -1,6 +1,6 @@
-package pl.sdacademy.designpatterns.singleton;
+package pl.sdacademy.designpatterns.singleton.eager;
 
-public class SingletonApp {
+public class EagerSingletonApp {
 
     public static void main(String[] args) {
         Counter counter1 = Counter.getInstance();

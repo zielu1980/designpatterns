@@ -1,4 +1,4 @@
-package pl.sdacademy.designpatterns.singleton;
+package pl.sdacademy.designpatterns.singleton.eager;
 
 public class Counter {
 
