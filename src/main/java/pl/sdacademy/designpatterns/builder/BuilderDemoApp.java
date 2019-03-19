@@ -20,11 +20,11 @@ public class BuilderDemoApp {
         System.out.println(playerA);
         System.out.println(playerB);
 
-        final Person person = Person.builder()
+        final Person person = Person.personBuilder()
                 .age(13)
                 .name("Michal")
                 .surname("Bocian")
-                .build();
+                .create();
         System.out.println(person);
     }
 }
