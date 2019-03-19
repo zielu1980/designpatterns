@@ -19,5 +19,12 @@ public class BuilderDemoApp {
         // Add to String method
         System.out.println(playerA);
         System.out.println(playerB);
+
+        final Person person = Person.builder()
+                .age(13)
+                .name("Michal")
+                .surname("Bocian")
+                .build();
+        System.out.println(person);
     }
 }
