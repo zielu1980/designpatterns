@@ -7,7 +7,6 @@ public class PersonManagmentService implements PersonManager {
 
     private List<Person> persons = new ArrayList<>();
 
-
     @Override
     public void addPerson(final Person person) {
         if (persons.contains(person) || persons.stream().anyMatch(p -> p.getEmail().equals(person.getEmail()))) {
