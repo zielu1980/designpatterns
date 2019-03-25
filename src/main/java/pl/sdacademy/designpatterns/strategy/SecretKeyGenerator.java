@@ -15,7 +15,7 @@ public class SecretKeyGenerator {
         this.secretKeyGenerationStrategy = secretKeyGenerationStrategy;
     }
 
-    public SecretKey generate() throws NoSuchAlgorithmException {
+    public SecretKey create() throws NoSuchAlgorithmException {
         return secretKeyGenerationStrategy.generate();
     }
 }

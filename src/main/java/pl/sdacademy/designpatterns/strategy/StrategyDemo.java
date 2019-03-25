@@ -11,9 +11,9 @@ public class StrategyDemo {
 
         final SecretKeyGenerator secretKeyGenerator = new SecretKeyGenerator(generationStrategy);
 
-        SecretKey secretKey = secretKeyGenerator.generate();
+        SecretKey secretKey = secretKeyGenerator.create();
         System.out.println(secretKey.getAlgorithm());
-        secretKey = secretKeyGenerator.generate();
+        secretKey = secretKeyGenerator.create();
         System.out.println(secretKey.getAlgorithm());
 
         generationStrategy = new DesKeyGenerationStrategy();
