@@ -1,10 +1,14 @@
 package pl.sdacademy.designpatterns.template;
 
+import java.util.Random;
+
 public class StringConcatTestTemplate extends PerformanceTestTemplate {
     @Override
     public void testIteration() {
-        final String result = "abc" + "def";
-        // PROBLEM : result not used -> Blackhole from JMH, java12 solves the issue
+        String result = "";
+        for (int index = 0; index < 10000; index++) {
+            result += new Random().nextInt();
+        }
     }
 
     @Override
