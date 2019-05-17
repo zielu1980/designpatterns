@@ -1,4 +1,4 @@
-package pl.sdacademy.designpatterns.abstractfactory;
+package pl.sdacademy.designpatterns;
 
 public class Test {
 
